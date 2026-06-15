@@ -1,4 +1,4 @@
-/* === Codexian 聊天面板 === */
+/* === Codexian Plus 聊天面板 === */
 
 .codexian-container {
   display: flex;
@@ -8,11 +8,10 @@
   user-select: text;
 }
 
-/* 标题栏 */
 .codexian-header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 8px;
   padding: 8px 12px;
   border-bottom: 1px solid var(--background-modifier-border);
 }
@@ -20,9 +19,19 @@
 .codexian-title {
   font-weight: 600;
   font-size: 15px;
+  flex-shrink: 0;
 }
 
-/* 聊天区域 */
+.codexian-model-select {
+  flex: 1;
+  padding: 2px 4px;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 4px;
+  background: var(--background-primary);
+  color: var(--text-normal);
+  font-size: 11px;
+}
+
 .codexian-chat {
   flex: 1;
   overflow-y: auto;
@@ -33,7 +42,6 @@
   user-select: text;
 }
 
-/* 消息气泡 */
 .codexian-msg {
   max-width: 90%;
   padding: 8px 12px;
@@ -72,7 +80,6 @@
   background: transparent;
 }
 
-/* 输入区 */
 .codexian-input-area {
   display: flex;
   gap: 8px;
