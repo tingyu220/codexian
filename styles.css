@@ -1,0 +1,121 @@
+/* === Codexian 聊天面板 === */
+
+.codexian-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-size: 14px;
+}
+
+/* 标题栏 */
+.codexian-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.codexian-title {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.codexian-stop-btn {
+  background: var(--interactive-accent);
+  color: var(--text-on-accent);
+  border: none;
+  padding: 4px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+/* 聊天区域 */
+.codexian-chat {
+  flex: 1;
+  overflow-y: auto;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* 消息气泡 */
+.codexian-msg {
+  max-width: 90%;
+  padding: 8px 12px;
+  border-radius: 8px;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.codexian-msg-user {
+  align-self: flex-end;
+  background: var(--interactive-accent);
+  color: var(--text-on-accent);
+}
+
+.codexian-msg-assistant {
+  align-self: flex-start;
+  background: var(--background-secondary);
+  color: var(--text-normal);
+}
+
+.codexian-msg-system {
+  align-self: center;
+  color: var(--text-muted);
+  font-size: 12px;
+  background: transparent;
+  max-width: 100%;
+}
+
+.codexian-msg-thinking {
+  align-self: flex-start;
+  color: var(--text-muted);
+  font-style: italic;
+  background: transparent;
+}
+
+/* 输入区 */
+.codexian-input-area {
+  display: flex;
+  gap: 8px;
+  padding: 8px 12px;
+  border-top: 1px solid var(--background-modifier-border);
+}
+
+.codexian-input {
+  flex: 1;
+  resize: none;
+  min-height: 36px;
+  max-height: 120px;
+  padding: 8px;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 6px;
+  background: var(--background-primary);
+  color: var(--text-normal);
+  font-family: inherit;
+  font-size: 13px;
+}
+
+.codexian-input:focus {
+  outline: none;
+  border-color: var(--interactive-accent);
+}
+
+.codexian-send-btn {
+  background: var(--interactive-accent);
+  color: var(--text-on-accent);
+  border: none;
+  padding: 6px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.codexian-send-btn:hover {
+  opacity: 0.9;
+}

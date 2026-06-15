@@ -1,0 +1,11 @@
+{
+  "id": "codexian",
+  "name": "Codexian",
+  "version": "0.1.0",
+  "minAppVersion": "1.7.0",
+  "description": "AI chat assistant powered by Codex CLI (DeepSeek). Ask questions, search your vault, create notes — all inside Obsidian.",
+  "author": "田雨",
+  "authorUrl": "https://github.com/TianYu-00",
+  "fundingUrl": "",
+  "isDesktopOnly": true
+}
