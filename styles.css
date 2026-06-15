@@ -5,6 +5,7 @@
   flex-direction: column;
   height: 100%;
   font-size: 14px;
+  user-select: text;
 }
 
 /* 标题栏 */
@@ -21,16 +22,6 @@
   font-size: 15px;
 }
 
-.codexian-stop-btn {
-  background: var(--interactive-accent);
-  color: var(--text-on-accent);
-  border: none;
-  padding: 4px 12px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 12px;
-}
-
 /* 聊天区域 */
 .codexian-chat {
   flex: 1;
@@ -39,6 +30,7 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
+  user-select: text;
 }
 
 /* 消息气泡 */
@@ -49,6 +41,8 @@
   line-height: 1.5;
   white-space: pre-wrap;
   word-break: break-word;
+  user-select: text;
+  -webkit-user-select: text;
 }
 
 .codexian-msg-user {
